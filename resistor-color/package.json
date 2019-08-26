@@ -11,9 +11,6 @@
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
-    "@stryker-mutator/core": "^2.0.2",
-    "@stryker-mutator/html-reporter": "^2.0.2",
-    "@stryker-mutator/javascript-mutator": "^2.0.2",
     "@types/jest": "^24.0.16",
     "@types/node": "^12.6.8",
     "babel-eslint": "^10.0.2",
@@ -28,13 +25,11 @@
     ]
   },
   "scripts": {
-    "test": "jest --no-cache ./*",
+    "test": "jest --no-cache --coverage ./*",
     "watch": "jest --no-cache --watch ./*",
     "lint": "eslint .",
     "lint-test": "eslint . && jest --no-cache ./* "
   },
   "license": "MIT",
-  "dependencies": {
-    "stryker-cli": "^1.0.0"
-  }
+  "dependencies": {}
 }
